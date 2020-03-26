@@ -1,0 +1,7 @@
+for (l in 1:nrow(predictDataBi)) {
+if (predictDataBi$predDigitBi[l] == predictDataBi$label[l]) {
+    predictDataBi$accuracy[l] <- 1
+  } else {
+    predictDataBi$accuracy[l] <- 0
+  }
+}
